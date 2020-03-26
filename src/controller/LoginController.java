@@ -23,7 +23,7 @@ public class LoginController extends Controller<Usuario> implements Serializable
 	private static final long serialVersionUID = 8843973377372239240L;
 	private String filtro;
 
-	//função de entrar 
+	//função de entrar com hash
     public void entrar() {
         String senha = Util.hashSHA256(getEntity().getSenha());
         //teste senha hash
