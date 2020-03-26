@@ -26,7 +26,7 @@ public class LoginController extends Controller<Usuario> implements Serializable
 
     public void entrar() {
         String senha = Util.hashSHA256(getEntity().getSenha());
-
+        //teste senha hash
         System.out.println(senha);
 
         EntityManager em = JPAFactory.getEntityManager();
