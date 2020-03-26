@@ -22,7 +22,7 @@ public class Repository<T extends DefaultEntity<T>> {
 			getEntityManager().getTransaction().begin();
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new RepositoryException("Problema ao iniciar uma transa��o");
+			throw new RepositoryException("Problema ao iniciar uma transacao");
 		}
 	}
 
@@ -31,7 +31,7 @@ public class Repository<T extends DefaultEntity<T>> {
 			getEntityManager().getTransaction().commit();
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new RepositoryException("Problema ao comitar uma transa��o");
+			throw new RepositoryException("Problema ao comitar uma transacao");
 		}
 	}
 
@@ -47,7 +47,7 @@ public class Repository<T extends DefaultEntity<T>> {
 		try {
 			getEntityManager().merge(entity);
 		} catch (Exception e) {
-			System.out.println("Erro no reposit�rio ao executar o m�todo merge.");
+			System.out.println("Erro no reposit�rio ao executar o metodo merge.");
 			e.printStackTrace();
 			throw new RepositoryException("Erro ao salvar");
 		}
@@ -59,7 +59,7 @@ public class Repository<T extends DefaultEntity<T>> {
 			T obj = getEntityManager().merge(entity);
 			getEntityManager().remove(obj);
 		} catch (Exception e) {
-			System.out.println("Erro no reposit�rio ao executar o m�todo merge.");
+			System.out.println("Erro no reposit�rio ao executar o metodo merge.");
 			e.printStackTrace();
 			throw new RepositoryException("Erro ao salvar");
 		}

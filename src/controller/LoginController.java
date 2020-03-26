@@ -41,7 +41,7 @@ public class LoginController extends Controller<Usuario> implements Serializable
         }
 
         if (entity != null)
-            Util.redirect("hello.xhtml");
+            Util.redirect("usuario.xhtml");
         else
             Util.addMessageError("Erro");
     }

@@ -6,14 +6,13 @@ import javax.persistence.Persistence;
 import javax.persistence.Query;
 
 public class JPAFactory {
-	
 	private JPAFactory() {
-		// garante que a classe nao pode ser instanciada
+		// garante que a classe n�o possa ser instanciada
 	}
-	
+
 	private static EntityManagerFactory emf = 
-			Persistence.createEntityManagerFactory("AutoPecas");
-	
+			Persistence.createEntityManagerFactory("Professor");
+
 	public static EntityManager getEntityManager() {
 		return emf.createEntityManager();
 	}
