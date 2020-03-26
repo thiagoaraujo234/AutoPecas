@@ -14,6 +14,7 @@ public class TemplateController implements Serializable {
 	private static final long serialVersionUID = 206276099339678780L;
 	private Usuario usuarioLogado;
 
+	
 	public Usuario getUsuarioLogado() {
 		if (usuarioLogado == null) {
 			// buscando o usuario da sessao
