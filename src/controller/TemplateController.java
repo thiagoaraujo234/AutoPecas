@@ -10,7 +10,7 @@ import model.Usuario;
 @Named
 @ViewScoped
 public class TemplateController implements Serializable {
-
+	//serializable
 	private static final long serialVersionUID = 206276099339678780L;
 	private Usuario usuarioLogado;
 
@@ -32,5 +32,4 @@ public class TemplateController implements Serializable {
 		Session.getInstance().invalidateSession();
 		return "login.xhtml?faces-redirect=true";
 	}
-
 }
