@@ -8,7 +8,6 @@ import javax.faces.context.FacesContext;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class Util {
-
 	
 	public static String hashSHA256(String valor) {
 		return DigestUtils.sha256Hex(valor);
